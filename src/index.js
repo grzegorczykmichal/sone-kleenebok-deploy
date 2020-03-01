@@ -31,6 +31,6 @@ const mount = (app) => __awaiter(void 0, void 0, void 0, function* () {
     });
     apollo.applyMiddleware({ app, path: "/api" });
     app.listen(process.env.APP_PORT);
-    console.log(`\u001b[31m[${APP_NAME}]\u001b[0m Listening on ${process.env.APP_PORT}`);
+    console.log(`\u001b[31m[${APP_NAME}]\u001b[0m Listening on ${process.env.PORT}`);
 });
 mount(express_1.default());
