@@ -31,8 +31,9 @@ const mount = (app) => __awaiter(void 0, void 0, void 0, function* () {
     });
     apollo.applyMiddleware({ app, path: "/api" });
     const server_port = process.env.APP_PORT || process.env.PORT || 80;
-    app.listen(server_port, function() {
-        console.log(`\u001b[31m[${APP_NAME}]\u001b[0m Listening on ${server_port}`);
+    const server_host = "0.0.0.0";
+    app.listen(server_port, server_host,function() {
+        console.log(`\u001b[31m[${APP_NAME}]\u001b[0m Listening on ${server_host}:${server_port}`);
     });
 
 });
