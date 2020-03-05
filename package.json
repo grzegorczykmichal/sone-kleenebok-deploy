@@ -15,6 +15,6 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "build": "echo "Building""
+    "build": "echo 'Building'"
   }
 }
